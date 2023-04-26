@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking to the CSS file -->
+  </head>
+  <body>
+    <div class="calculator"> <!-- Calculator container -->
+      <div class="display"> <!-- Display container -->
+        <input type="text" id="display" disabled> <!-- Display input -->
+      </div>
+      <div class="buttons"> <!-- Buttons container -->
+        <!-- Operator buttons -->
+        <button class="operator" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="backspace()">CE</button>
+        <button class="operator" onclick="insert('%')">%</button>
+        <button class="operator" onclick="insert('/')">/</button>
+        <!-- Number buttons -->
+        <button class="number" onclick="insert('7')">7</button>
+        <button class="number" onclick="insert('8')">8</button>
+        <button class="number" onclick="insert('9')">9</button>
+        <button class="operator" onclick="insert('*')">*</button>
+        <button class="number" onclick="insert('4')">4</button>
+        <button class="number" onclick="insert('5')">5</button>
+        <button class="number" onclick="insert('6')">6</button>
+        <button class="operator" onclick="insert('-')">-</button>
+        <button class="number" onclick="insert('1')">1</button>
+        <button class="number" onclick="insert('2')">2</button>
+        <button class="number" onclick="insert('3')">3</button>
+        <button class="operator" onclick="insert('+')">+</button>
+        <button class="number" onclick="insert('0')">0</button>
+        <button class="number" onclick="insert('.')">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script> <!-- Linking to the JavaScript file -->
+  </body>
+</html>
